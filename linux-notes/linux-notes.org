@@ -1,0 +1,59 @@
+#+title: Linux Notes
+
+* Tmux
+** How to install tpm plugins:
+run ~/.tmux/plugins/tpm/bin/install_plugins
+**** Link:https://github.com/tmux-plugins/tpm/issues/127#issuecomment-1482627527
+* LazyVim
+** Keybindings
+*** ctrl+h or ctrl+l to go to explorer side pane
+*** shift+h or shift+l to go to tabs
+* Doom Emacs
+** How to run doom commands
+cd to ./.emacs.d/bin where you can then run any of the doom commands: ./doom doctor, ./doom sync, etc.
+** How to add flags:
+in .init.el you can add flags to the packages to install some optional dependencies.
++ Reference:  https://www.youtube.com/watch?v=Ea_-TaEGa7Y
+** <space>+o+A open org agenda
+** DONE hit enter in view mode to toggle between todo & done state fast
++ "+" is used for lists
+  + you can use spc+m-t-t to mark as todo
++ hitting ctrl+enter on list bullets opens a new list line
++ spc+m+d+s opens org schedule
+** DONE make a scheduled task in org mode
+CLOSED: [2025-04-08 Tue 13:38] SCHEDULED: <2025-04-10 Thu 20:00>
++ in the schedule view you can use shift+arrow key to select a date or the mouse. type in a time
++ doing shift+arrow key also works in line on the org document to quickly change the date.
++ when in the agenda view, (spc+o+A+a), you can do spc+m+t to modify the task type ie. from TODO to project, etc.
+** TODO Review checks and lists in org mode. [0/3]
+SCHEDULED: <2025-04-09 Wed 23:00 ++1d>
+:PROPERTIES:
+:LAST_REPEAT: [2025-04-08 Tue 13:38]
+:END:
+- State "DONE"       from "TODO"       [2025-04-08 Tue 13:38]
++ add ++1d modifiers at the end of a scheduled tag to make reoccurring items.
+adding a check box with a "[0/3]" to the end of a todo list item with check boxes underneath it it adds a counter
++ [ ] Empty check box
++ [ ] ctrl+return adds a new list / check box on the same level.
++ [-] this works for bullets too.
+  if you complete some of the sub list items, the check box will be marked with "[-]", but once all are done, the parent check box will be marked with an "X".
+  ctrl+c+ctrl+c will complete the check box, or spc+m+x
+  + [X] sub task 1
+  + [ ] sub task 2
++ spc+o+A+s will search all "TODO" items by a keyword.
+* Personal Task List
+** Home tasks [0/4]
++ [ ] Mow the yard
++ [ ] Put trash out for pickup
++ [ ] wash the car.
+** TODO Shopping list
+SCHEDULED: <2025-04-11 Fri 16:00>
++ [ ] cat food
++ [ ] apples
++ [ ] tomatoes
++ [ ] broccoli
+** DONE Gym Schedule
+CLOSED: [2025-04-08 Tue 13:38] SCHEDULED: <2025-04-09 Wed 09:00>--<2025-04-30 Wed 9:00>
++ [ ] Leg day
++ [ ] Push day
++ [ ] Pull day
